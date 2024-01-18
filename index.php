@@ -23,5 +23,12 @@
         <input type="text" name="password_length">
         <button type="submit">Gen</button>
     </form>
+<?php if(isset($_GET["password_length"])){ ?>
+    <p>
+        <?php
+            echo passwordGen($_GET["password_length"]);
+        ?>
+    </p>
+<?php }?>
 </body>
 </html>
